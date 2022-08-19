@@ -1,0 +1,33 @@
+:root{
+    --cor-primaria: #1c6e8c;
+    --cor-primaria-dark: #274156;
+    --cor-texto: #605856;
+    --cor-fundo: #fbfcff;
+    --cor-texto-secundaria: #fbfcff;
+}
+
+* {
+    margin: 0; padding: 0;
+}
+
+.form{
+    margin: 10px;
+}
+
+.label{
+    display: block;
+    color: var(--cor-texto);
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.input{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cabecalho{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-secundaria);
+    padding: 10px;
+}

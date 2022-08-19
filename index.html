@@ -3,13 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <TItle>Formulários</TItle>
+        <link rel="stylesheet" href="estilo.css">
     </head>
 <body>
-    <form>
+    <header class="cabecalho">
+        Inscrição
+    </header>
+    <form class="form">
         <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Ex.: Maria Oliveira">
+            <label for="nome" class="label">Nome:</label>
+            <input type="text" class="input" id="nome" placeholder="Ex.: Maria Oliveira">
         </div>
+
+        <div>
+            <label for="email" class="label">E-mail:</label>
+            <input type="email" class="input" id="email" placeholder="Ex.: maria.oliveira@gmail.com">
+        </div>
+
+        <div>
+           <label class="label">Sexo:</label>
+           <input type="radio" id="masc" name="sexo"/>
+           <label for="masc">Masculino</label>
+           <input type="radio" id="fem" name="sexo"/>
+           <label for="fem">Feminino</label>
+        </div>
+
+        <div>
+            <label for="curso" class="label">Curso</label>
+            <select>
+                <option value="122">HTML e CSS</option>
+                <option value="124">JavaScript</option>
+                <option value="345">Git</option>
+                <option value="890">Node</option>               
+            </select>
+        </div>
+
+        <div>
+            <label for="atendimento" class="label">Descreva o atendimento especial</label>
+            <textarea id = "atendimento"></textarea>
+        </div>
+
     </form>
 </body>
 </html>
