@@ -2,12 +2,15 @@
     --cor-primaria: #1c6e8c;
     --cor-primaria-dark: #274156;
     --cor-texto: #605856;
+    --cor-borda: #605856;
     --cor-fundo: #fbfcff;
     --cor-texto-secundaria: #fbfcff;
 }
 
+/*css Reset*/
 * {
     margin: 0; padding: 0;
+    box-sizing: border-box;
 }
 
 .form{
@@ -24,6 +27,8 @@
 .input{
     padding: 10px;
     margin-top: 10px;
+    width: 280px;
+    border: 1px var(--cor-borda)solid;
 }
 
 .cabecalho{
@@ -31,3 +36,29 @@
     color: var(--cor-texto-secundaria);
     padding: 10px;
 }
+
+.botao{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-secundaria);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.atendimento{
+    width: 280px;
+    height: 160px;
+    resize: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px var(--cor-borda)solid;
+  }
+
+  .select{
+    width: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--cor-fundo);
+    border: 1px var(--cor-borda)solid;
+  }
